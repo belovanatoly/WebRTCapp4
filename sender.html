@@ -1,0 +1,26 @@
+﻿<html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sender</title>
+  <style>
+    video { height: 240px; width: 320px; border: 1px solid grey; }
+  </style>
+
+</head>
+
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/sender.js"></script>
+<p>Sender</p>
+
+  <button id="btn_getUserMedia" onclick="getUserMedia_click()">getUserMedia</button>
+  <button id="btn_PeerConnection" onclick="PeerConnection_click()">setPeerConnection</button>
+  <button id="btn_addSteam" onclick="addStream()">addStream</button>
+  <button id="btn_createOffer" onclick="createOffer_click()">createOffer</button>
+  <br>
+  <video id="localVideo" autoplay="true"></video>
+
+
+</body>
+</html>

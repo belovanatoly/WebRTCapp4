@@ -1,0 +1,24 @@
+﻿<html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>receiver</title>
+  <style>
+    video { height: 240px; width: 320px; border: 1px solid grey; }
+  </style>
+
+</head>
+
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/receiver.js"></script>
+<p>Receiver</p>
+
+
+  <button id="btn_createConnection" onclick="createConnection_click()">createConnection</button>
+  <br>
+  <video id="remoteVideo" autoplay></video>
+
+
+</body>
+</html>

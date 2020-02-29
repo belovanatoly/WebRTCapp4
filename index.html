@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>DEMO</title>
+</head>
+
+
+<body>
+	
+<script type="text/javascript">console.log("begin");</script>
+<script src="/socket.io/socket.io.js"></script>
+
+<p>hallo</p>
+<p><a href="/sender.html" target="_blank">sender</a></p>
+<p><a href="/receiver.html" target="_blank">receiver</a></p>
+
+<script type="text/javascript">
+
+var socket = io.connect();
+
+socket.on('success', function ()
+{
+	console.log("socket.on connected");
+});
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
