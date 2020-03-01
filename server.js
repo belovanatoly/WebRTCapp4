@@ -29,6 +29,12 @@ io.sockets.on('connection', function (socket){
 		{
 			console.log('test message is coming from user');
 			socket.emit("message", message);
+			if (message.text == "sender"){
+				candidates.splice(0);
+				console.log('candidates is nulled');
+				console.log(candidates.length);
+				}
+
 
 		}
 
