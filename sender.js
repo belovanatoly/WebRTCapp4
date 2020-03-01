@@ -47,7 +47,7 @@ PeerConnection_click();
 
 	navigator.getUserMedia(
 		{
-			audio: false,
+			audio: true,
 			video: true
 		},
 		function (stream)
