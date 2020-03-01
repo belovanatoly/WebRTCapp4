@@ -33,7 +33,7 @@ io.sockets.on('connection', function (socket){
 					candidates.splice(0);
 					console.log('candidates is nulled');
 					console.log(candidates.length);
-					socket.emit("Candidates", 'Candidates ' + candidates.length);
+					socket.emit("message", 'Candidates ' + candidates.length);
 					
 				}
 
