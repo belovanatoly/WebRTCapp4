@@ -34,6 +34,9 @@ io.sockets.on('connection', function (socket){
 					console.log('candidates is nulled');
 					console.log(candidates.length);
 					socket.emit("message", 'Candidates ' + candidates.length);
+					messageOffer = '';
+					socket.emit("message", 'messageN ' + messageN);
+					socket.emit("message", 'messageOffer ' + messageOffer);
 					
 				}
 
