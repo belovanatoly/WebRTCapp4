@@ -56,8 +56,8 @@ PeerConnection_click();
 			console.log(stream);
 
 			var video = document.getElementById('localVideo');
-			//video.srcObject = stream; 
-			video.src = URL.createObjectURL(stream);  //test for my mobil
+			video.srcObject = stream; 
+
 			
 //			if(!localStream)
 //				{
